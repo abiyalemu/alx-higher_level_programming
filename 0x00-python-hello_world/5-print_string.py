@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 str = "Helberton School"
-print("{}{}{}\n{:.9}".format(str, str, str, str))
+print("{}" .format(str) *3)
+print(str[:9])
