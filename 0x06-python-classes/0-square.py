@@ -2,5 +2,6 @@
 """Documentation for a square class"""
 
 class Square():
-    """Empty class"""
+    """  Attributes:
+           None """
     pass
