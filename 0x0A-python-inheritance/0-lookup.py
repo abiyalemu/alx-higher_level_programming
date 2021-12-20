@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" returs a list of available attributes and methods """
+
 def lookup(obj):
-    """Return : a list with the attributes of an object"""
-    return dir(obj)
+    """ all attributes and methods of obj """
+    return [method for method in dir(obj)]
