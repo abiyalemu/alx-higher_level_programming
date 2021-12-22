@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""Inherit from function"""
+
 def inherits_from(obj, a_class):
-    if not issubclass(type(obj), a_class) or type(obj) == a_class:
+    if type(obj) is not a_class and isinstance(obj, a_class):
+        return True
+    else:
         return False
-    return True
