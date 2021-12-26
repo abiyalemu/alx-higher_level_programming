@@ -1,27 +1,31 @@
 #!/usr/bin/python3
-"""Square class documentation"""
+"""Defines a class Square"""
 
 
-class Square():
-    """A quadrilateral with four equal sides to square class"""
-
+class Square:
+    """Represents a square
+    Attributes:
+        __size (int): The square side size
+    """
     def __init__(self, size=0):
-        """Sets the initial size value upon instantiation of the class
-           Throws errors if the value passed in is not an integer
+        """initializes the square
         Args:
-            size (int, optional): the size of the square object
-        Raises:
-            TypeError: The value passed in is not an integer
-            ValueError: The value passed in is less than 0
+            size (int): The square side size 
+        Returns:
+            None
         """
-
-        if not isinstance(size, int):
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
         else:
-            self.__size = size
+            if size < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
 
     def area(self):
-        """Returns the area of the square"""     
-        return self.__size**2
+        """calculates the square's area
+        Returns:
+            The area of the square
+        """
+        area = self.__size ** 2
+        return (area)
